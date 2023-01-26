@@ -70,6 +70,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="img\cas.jpg" />
+    <Content Include="img\cd.jpg" />
+    <Content Include="img\ironman.jpg" />
+    <Content Include="img\R.jpg" />
     <Content Include="Paginas\crud.aspx" />
     <Content Include="Paginas\index.aspx" />
     <Content Include="Paginas\login.aspx" />

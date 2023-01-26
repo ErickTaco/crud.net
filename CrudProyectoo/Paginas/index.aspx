@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="body" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="body "   runat="server">
     <form runat="server">
         <br />
         <div class="mx-auto" style="width:300px">
@@ -13,23 +13,28 @@
         
         </div>
         <br />
-        <div class="container">
+        <div class="container" >
             <div class="row">
                 <div class="col align-self-end">
-                    <asp:Button runat="server" ID="BtnCreate" CssClass="btn btn-success form-control-sm" Text="Create" OnClick="BtnCreate_Click"/>
+                    <asp:Button runat="server" ID="BtnCreate" CssClass="btn btn-success form-control-sm" Text="Crear" OnClick="BtnCreate_Click"/>
                 </div>
             </div>
         </div>
         <br />
-        <div class="container row">
-            <div class="table small">
-                <asp:GridView runat="server" ID="gvusuarios" class="table table-borderless table-hover">
-                    <Columns>
+        <div class="container row " >
+            <div class="table small " style="
+            width:90%;height:500px; 
+            color:white;
+            background-image:url('../img/R.jpg');
+            background-repeat: no-repeat;
+	        ">
+                <asp:GridView runat="server" ID="gvusuarios" CssClass=""  >
+                    <Columns >
                         <asp:TemplateField HeaderText="Opciones del administrador">
                             <ItemTemplate>
-                                <asp:Button runat="server" Text="Read" CssClass="btn form-control-sm btn-info" ID="BtnRead" OnClick="BtnRead_Click"/>
-                                <asp:Button runat="server" Text="Update" CssClass="btn form-control-sm btn-warning" ID="BtnUpdate" OnClick="BtnUpdate_Click"/>
-                                <asp:Button runat="server" Text="Delete" CssClass="btn form-control-sm btn-danger" ID="BtnDelete" OnClick="BtnDelete_Click"/>
+                                
+                                <asp:Button runat="server" Text="Editar" CssClass="btn form-control-sm btn-warning" ID="BtnUpdate" OnClick="BtnUpdate_Click"/>
+                                <asp:Button runat="server" Text="Eliminar" CssClass="btn form-control-sm btn-danger" ID="BtnDelete" OnClick="BtnDelete_Click"/>
                             </ItemTemplate>
                         </asp:TemplateField>
 

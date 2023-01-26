@@ -20,6 +20,8 @@ namespace CrudProyectoo.Paginas
             cargarTabla();
             inicioSesion();
         }
+        
+        
         void inicioSesion() {
             if (Session["usuarioCorrecto"] != null)
             {
@@ -30,6 +32,9 @@ namespace CrudProyectoo.Paginas
                 Response.Redirect("login.aspx");
             }
         }
+
+
+
         void cargarTabla() {
             SqlCommand cmd = new SqlCommand("sp_load", con);
             cmd.CommandType = System.Data.CommandType.StoredProcedure;
@@ -46,14 +51,7 @@ namespace CrudProyectoo.Paginas
             Response.Redirect("~/Paginas/crud.aspx?op=C");
         }
 
-        protected void BtnRead_Click(object sender, EventArgs e)
-        {
-            string id;
-            Button BtnConsultar=(Button)sender;
-            GridViewRow selectedrow = (GridViewRow)BtnConsultar.NamingContainer;
-            id = selectedrow.Cells[1].Text;
-            Response.Redirect("~/Paginas/crud.aspx?id="+id+"&op=R");
-        }
+     
 
         protected void BtnUpdate_Click(object sender, EventArgs e)
         {

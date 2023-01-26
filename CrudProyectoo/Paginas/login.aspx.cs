@@ -31,10 +31,6 @@ namespace CrudProyectoo.Paginas
             if (dr.Read())
             {
                 Session["usuarioCorrecto"] = tbUsuario.Text;
-
-
-
-
                 Response.Redirect("index.aspx");
             }
             else {

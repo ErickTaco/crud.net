@@ -29,7 +29,7 @@ namespace CrudProyectoo.Paginas
 
                     switch (Op) {
                         case "C":
-                            this.lbltitulo.Text = "Ingressar nuevo usauruio";
+                            this.lbltitulo.Text = "Ingresar nuevo Usuario";
                             this.BtnCreate.Visible = true;
                                 break;
                         case "R":

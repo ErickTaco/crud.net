@@ -24,6 +24,15 @@ namespace CrudProyectoo.Paginas
         protected global::System.Web.UI.WebControls.Label lbltitulo;
 
         /// <summary>
+        /// Control BtnLogin.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnLogin;
+
+        /// <summary>
         /// Control tbUsuario.
         /// </summary>
         /// <remarks>
@@ -40,14 +49,5 @@ namespace CrudProyectoo.Paginas
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tbClave;
-
-        /// <summary>
-        /// Control BtnLogin.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnLogin;
     }
 }
